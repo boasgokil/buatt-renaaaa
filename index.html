@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Sayang</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ffe4ec, #e0bbf7);
+      color: #333;
+      overflow-x: hidden;
+    }
+    .page {
+      display: none;
+      padding: 40px 20px;
+      text-align: center;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .active {
+      display: flex;
+    }
+    h1, h2 {
+      font-family: 'Dancing Script', cursive;
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    img {
+      max-width: 90%;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 1em;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff85c1;
+    }
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .hearts span {
+      position: absolute;
+      color: pink;
+      font-size: 2em;
+      animation: float 6s infinite;
+      opacity: 0.8;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh) scale(1); opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+    }
+    audio {
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop controls>
+    <source src="Sal Priadi - Serta Mulia (Official Lyric Video) [q6on6wvbvwk].mp3" type="audio/mp3">
+    Browser tidak mendukung audio.
+  </audio>  <div class="hearts"></div>  <div id="page1" class="page active">
+    <h1>Happy Birthday, Sayangku 💖</h1>
+    <img src="1a546758d4a88f2ed56ea2a9afa48f00.gif" alt="Gift">
+    <p>aku adaa hadiah buatt kamuu<br> kamu mauu apaa enggaa nihh?</p>
+    <button onclick="showPage('page2')">mauuu 💖</button>
+    <button onclick="showPage('page3')">enggaaa 😝</button>
+  </div>  <div id="page2" class="page">
+    <h2>yeayy kamu mauuu</h2>
+    <img src="88149b0400750578f4d07d9bc3fb0fee.gif" width="30%" height="30%" alt="Photo 2">
+    <p>inii hadiahnyaa wkwkwk...happy happy happyyy<br>
+    lanjutt yakkk<br></p>
+    <button onclick="showPage('page4')">iyaaa</button>
+  </div>  <div id="page3" class="page">
+    <h2>HARUSS MAUU POKOKNYAA!!</h2>
+    <img src="peach-goma.gif" alt="Photo 3">
+    <p>YAHH ADANYAA CUMA SATU PILIHANN WWKKWK</p>
+    <button onclick="showPage('page4')">Yaa dehh</button>
+  </div>  <div id="page4" class="page">
+    <h2>inii hadiahhnyaaa wkwkwk😆</h2>
+    <img src="IMG_20250415_152631_066.jpg" width="30%" height="20%" alt="Photo 4">
+    <p>hehee guaa kecee darii lahirr...lucukkk💖</p>
+    <button onclick="showPage('page5')">Lanjut</button>
+  </div>  <div id="page5" class="page">
+    <h2>lagii nihhh</h2>
+    <img src="IMG-20230913-WA0035.jpg" width="30%" height="20%" alt="Photo 5">
+    <p>hahaa ini pap pertama dari kamuuu<br>
+    lucuukk cantikkk manissss pokoknyaaa...lovvv bgttt💖</p>
+    <button onclick="showPage('page6')">Lanjut</button>
+  </div>  <div id="page6" class="page">
+    <h2>ehh cantikk bangett yang pakai kebayaa siapaa yaa iniii</h2>
+    <img src="WhatsApp Image 2025-07-27 at 5.27.38 PM.jpeg" width="30%" height="20%" alt="Photo 6">
+    <p>hahaha inii salah satu skinmu yang akuu sukaa...<br>
+    waktuu kamuu pakaii bajuu iniii cantikkk bangett sayanggg bikinn salting tingkahh ahahaha</p>
+    <button onclick="showPage('page7')">Lanjut</button>
+  </div>  <div id="page7" class="page">
+    <h2>lahh nyempill lagii inii </h2>
+    <img src="WhatsApp Image 2025-07-27 at 5.28.55 PM.jpeg" width="30%" height="20%" alt="Photo 7">
+    <p>kecee badaii wkwkwk<br>
+    udahh yaa seriuss sekaranggg</p>
+    <button onclick="showPage('page8')">Lanjut</button>
+  </div>  <div id="page8" class="page">
+    <h2>tapii boongg</h2>
+    <img src="ungger.jpeg" width="30%" height="20%" alt="Photo 8">
+    <p>ungggrrr...lucuuukk bangettt sii kamuu sayanggggg<br>
+    udahhh pokonyaa sekarangg seriusss!!</p>
+    <button onclick="showPage('page9')">Lanjut</button>
+  </div>  <div id="page9" class="page">
+    <h2>ehh ketemuu fotoo inii lagiii</h2>
+    <img src="IMG-20231102-WA0025.jpg" width="30%" height="20%" alt="Photo 9">
+    <p>is this angell? look how beautifull, sweet and gorgeous 💕 </p>
+    <button onclick="showPage('page10')">Lanjut</button>
+  </div>  <div id="page10" class="page">
+    <h2>Selamat ulang tahunnn 💖🎂</h2>
+    <img src="WhatsApp Image 2025-07-27 at 4.18.29 PM (1).jpeg" width="30%" height="30%" alt="Photo 10">
+      <img src="WhatsApp Image 2025-07-27 at 4.18.29 PM.jpeg" width="30%" height="30%" alt="Photo 11">
+        <img src="WhatsApp Image 2025-07-27 at 4.18.30 PM.jpeg" width="30%" height="30%" alt="Photo 12">
+          <p>sweet 17th sayanggku cintakuu manissku duniakuu! 💕<br>
+    selamat ulang tahun untuk yang ke 17 semoga apa yang kamu doakan dan kamu harapkan dapat segera tercapaii,
+    doaku untukmu semoga kamu panjang umurr sehatt selaluu tambahh cantikk tambahh maniss tambahh lucuukkk makin tinggii.
+    di umur yang ke 17 ini semoga kamu diberikan jalan dan kemudahan untuk menempuh dan menata masa depan yang kamu harapkan
+    pokoknyaa semangatt teruss sayangg buat kedepannnyaa<br>
+    makasiii yaa sayangg udah menjadi bagian dari hidupku mewarnai hari hariku, aku sangat bersyukur punyaa kamuu😘
+    GBUU</p>
+    <p>
+      <br>btw aku juga udah buatin plylist lagu yang cocok buat kamu dengerin pas lagi santai atau lagi nugass semoga kamu sukaa yaa
+      <br>playlistnya ada di <a href="https://open.spotify.com/playlist/4Qr3U2s1PGj6UHept0UymX?si=ecdf022f1fa844e9" target="_blank">sinii sayangg</a>
+    </p>
+   
+    <p style="margin-top: 30px; font-size: 0.9em;">— boas </p>
+  </div>  <script>
+    const heartsContainer = document.querySelector(".hearts");
+    for (let i = 0; i < 40; i++) {
+      let heart = document.createElement("span");
+      heart.innerHTML = "❤️";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (Math.random() * 5 + 3) + "s";
+      heart.style.fontSize = (Math.random() * 20 + 10) + "px";
+      heartsContainer.appendChild(heart);
+    }
+
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script></body>
+</html>
